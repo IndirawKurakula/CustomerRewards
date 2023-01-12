@@ -2,6 +2,7 @@
 /bin/
 .classpath
 .project
-.DS_Store
 .settings
 /projectSet.psf/
+.DS_Store
+.bundle

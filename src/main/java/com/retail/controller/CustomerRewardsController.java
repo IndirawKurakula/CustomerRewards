@@ -14,7 +14,7 @@ import com.retail.model.Rewards;
 import com.retailrepository.CustomerRepository;
 import com.retail.service.RewardsService;
 
-public class customerRewardsController {
+public class CustomerRewardsController {
 
 @RestController
 @RequestMapping("/customers")
