@@ -16,26 +16,25 @@ import com.retail.service.RewardsService;
 
 public class CustomerRewardsController {
 
-@RestController
-@RequestMapping("/customers")
-public class RewardsController {
+	@RestController
+	@RequestMapping("/customers")
+	public class RewardsController {
 
-    @Autowired
-    RewardsService rewardsService;
+		@Autowired
+		RewardsService rewardsService;
 
-    @Autowired
-    CustomerRepository customerRepository;
+		@Autowired
+		CustomerRepository customerRepository;
 
-    @GetMapping(value = "/{customerId}/rewards",produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Rewards> getRewardsByCustomerId(@PathVariable("customerId") Long customerId){
-        Customer customer = customerRepository.findByCustomerId(customerId);
-        if(customer == null)
-        {
-        	throw new RuntimeException("Invalid / Missing customer Id ");
-        }
-        Rewards customerRewards = rewardsService.getRewardsByCustomerId(customerId);
-        return new ResponseEntity<>(customerRewards,HttpStatus.OK);
-    }
+		@GetMapping(value = "/{customerId}/rewards", produces = MediaType.APPLICATION_JSON_VALUE)
+		public ResponseEntity<Rewards> getRewardsByCustomerId(@PathVariable("customerId") Long customerId) {
+			Customer customer = customerRepository.findByCustomerId(customerId);
+			if (customer == null) {
+				throw new RuntimeException("Invalid / Missing customer Id ");
+			}
+			Rewards customerRewards = rewardsService.getRewardsByCustomerId(customerId);
+			return new ResponseEntity<>(customerRewards, HttpStatus.OK);
+		}
 
-}
+	}
 }
