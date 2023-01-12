@@ -1,4 +1,4 @@
-package com.retail;
+package com.retail.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
