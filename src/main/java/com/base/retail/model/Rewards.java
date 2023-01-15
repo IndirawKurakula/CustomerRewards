@@ -1,4 +1,4 @@
-package com.retail.model;
+package com.base.retail.model;
 
 public class Rewards {
     private long customerId;

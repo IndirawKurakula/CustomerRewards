@@ -1,6 +1,6 @@
-package com.retail.service;
+package com.base.retail.service;
 
-import com.retail.model.Rewards;
+import com.base.retail.model.Rewards;
 public interface RewardsService {
     public Rewards getRewardsByCustomerId(Long customerId);
 }

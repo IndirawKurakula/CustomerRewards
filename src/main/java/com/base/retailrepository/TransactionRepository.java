@@ -1,12 +1,12 @@
-  package com.retailrepository;
+  package com.base.retailrepository;
   
   import java.sql.Timestamp; import java.util.List;
   
   import org.springframework.data.repository.CrudRepository; import
   org.springframework.stereotype.Repository; import
   org.springframework.transaction.annotation.Transactional;
-  
-  import com.retail.entity.Transaction;
+
+import com.base.retail.entity.Transaction;
   
   @Repository
   

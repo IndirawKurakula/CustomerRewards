@@ -1,4 +1,4 @@
-package com.retail.constants;
+package com.base.retail.constants;
 
 public class Constants {
     public static final int daysInMonths = 30;

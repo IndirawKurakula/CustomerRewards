@@ -1,22 +1,23 @@
-package com.retail.service;
+package com.base.retail.service;
 
 import java.sql.Timestamp;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.base.retailrepository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.retail.constants.Constants;
-import com.retail.entity.Transaction;
-import com.retail.model.Rewards;
-import com.retailrepository.TransactionRepository;
+import com.base.retail.constants.Constants;
+import com.base.retail.entity.Transaction;
+import com.base.retail.model.Rewards;
 
 @Service
 public class RewardsServiceImpl implements RewardsService {
 
 	@Autowired
-	TransactionRepository transactionRepository;
+    TransactionRepository transactionRepository;
 
 	public Rewards getRewardsByCustomerId(Long customerId) {
 
