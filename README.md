@@ -8,8 +8,14 @@ A retailer offers a rewards program to its customers, awarding points based on e
 - H2 in-memory database to store the information
 - Refer application.properties file for connection details
 
+##### Pre-requisites
+- Java8&above
+- Maven
+- Springboot
+- H2 - Inmemory Database
+
 ##### To Run the Application
-- access the application using swagger-ui or postman
+- access the application using swagger-ui
 http://localhost:8080/swagger-ui/
 
 - using Postman
