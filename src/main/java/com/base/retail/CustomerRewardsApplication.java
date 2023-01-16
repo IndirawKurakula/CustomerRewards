@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 public class CustomerRewardsApplication {
 
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(CustomerRewardsApplication.class, args);
 	}

@@ -1,4 +1,4 @@
-package com.base.retailrepository;
+package com.base.retail.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
